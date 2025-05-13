@@ -1,0 +1,8 @@
+# Treat Swift files as UTF-8 text
+*.swift text
+
+# Normalize line endings
+* text=auto
+
+# Exclude Xcode project user-specific files from diff
+*.xcuserstate -diff
