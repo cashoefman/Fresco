@@ -15,7 +15,7 @@
 - Layout Helpers: CardView, Stacks, Containers, Divider
 - Data Display: Empty state views, badges, list/grid items
 
-> Component previews are available in [FrescoDemoApp](https://github.com/cashoefman/FrescoDemoApp)
+> Component previews are available in [FrescoDemoApp](https://github.com/disruptiveio/FrescoDemoApp)
 
 ---
 
@@ -26,7 +26,7 @@
 In Xcode:
 
 1. Go to File > Add Packages…
-2. Enter the URL: `https://github.com/cashoefman/Fresco.git`
+2. Enter the URL: `https://github.com/disruptiveio/Fresco.git`
 3. Choose the latest version or main branch
 4. Add to your app target
 
