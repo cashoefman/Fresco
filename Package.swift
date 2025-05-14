@@ -7,7 +7,7 @@ let package = Package(
     name: "Fresco",
     platforms: [
         .iOS(.v18),
-        .macOS(.v10_15)
+        .macOS(.v15)
     ],
     products: [
         .library(
