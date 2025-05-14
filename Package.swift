@@ -1,5 +1,4 @@
-//  swift-tools-version: 6.0
-//  The swift-tools-version declares the minimum version of Swift required to build this package.
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -13,7 +12,7 @@ let package = Package(
         .library(
             name: "Fresco",
             targets: ["Fresco"]
-        ),
+        )
     ],
     targets: [
         .target(
@@ -21,6 +20,10 @@ let package = Package(
             resources: [
                 .process("Resources/Assets.xcassets")
             ]
+        ),
+        .testTarget(
+            name: "FrescoTests",
+            dependencies: ["Fresco"]
         )
     ]
 )
