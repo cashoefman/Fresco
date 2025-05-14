@@ -1,0 +1,25 @@
+# .swiftlint.yml
+
+included:
+  - Sources
+  - Tests
+
+excluded:
+  - Carthage
+  - Pods
+  - Build
+  - .build
+  - .swiftpm
+
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - explicit_init
+  - fatal_error_message
+
+disabled_rules:
+  - trailing_whitespace
+  - identifier_name
+  - line_length
+
+reporter: xcode

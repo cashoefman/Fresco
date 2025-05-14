@@ -27,14 +27,17 @@ public struct SnackbarView: View {
             Spacer()
 
             if let title = actionTitle {
-                Button(action: {
-                    onAction?()
-                }) {
-                    Text(title)
-                        .font(AppFonts.body)
-                        .foregroundColor(.white)
-                        .bold()
-                }
+                Button(
+                    action: {
+                        onAction?()
+                    },
+                    label: {
+                        Text(title)
+                            .font(AppFonts.body)
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                )
             }
         }
         .padding()
@@ -43,4 +46,3 @@ public struct SnackbarView: View {
         .shadow(radius: 3)
     }
 }
-

@@ -1,5 +1,11 @@
 # Fresco
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![iOS](https://img.shields.io/badge/iOS-18%2B-lightgrey.svg)
+![Swift](https://img.shields.io/badge/Swift-6.1-orange.svg)
+![SPM](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg)
+![Build](https://github.com/disruptiveio/Fresco/actions/workflows/ci.yml/badge.svg)
+
 **Fresco** is a modular, scalable design system built in SwiftUI. It provides a consistent foundation of colors, typography, spacing, and reusable components for building beautiful and accessible iOS apps.
 
 ---

@@ -35,4 +35,3 @@ public struct SubtitleText: View {
     .padding()
     .background(AppColors.appBackground)
 }
-

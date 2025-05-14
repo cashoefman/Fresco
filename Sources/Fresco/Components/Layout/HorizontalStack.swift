@@ -24,4 +24,3 @@ public struct HorizontalStack<Content: View>: View {
         }
     }
 }
-

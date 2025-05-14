@@ -5,7 +5,6 @@
 //  Created by Cas Hoefman on 5/13/25.
 //
 
-
 import SwiftUI
 
 public struct InlineErrorMessage: View {
@@ -23,4 +22,3 @@ public struct InlineErrorMessage: View {
             .accessibilityLabel("Error: \(message)")
     }
 }
-

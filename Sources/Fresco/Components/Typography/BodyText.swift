@@ -25,4 +25,3 @@ public struct BodyText: View {
             .multilineTextAlignment(alignment)
     }
 }
-

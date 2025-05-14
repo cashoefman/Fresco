@@ -41,4 +41,3 @@ public struct ModalCardView<Content: View>: View {
         .padding()
     }
 }
-

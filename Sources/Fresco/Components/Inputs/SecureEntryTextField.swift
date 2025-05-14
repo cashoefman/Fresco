@@ -37,4 +37,3 @@ public struct SecureEntryTextField: View {
             .opacity(isDisabled ? 0.6 : 1.0)
     }
 }
-

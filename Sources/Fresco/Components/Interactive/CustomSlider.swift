@@ -23,4 +23,3 @@ public struct CustomSlider: View {
             .accentColor(AppColors.brandPrimary)
     }
 }
-

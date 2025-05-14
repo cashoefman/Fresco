@@ -11,7 +11,7 @@ public struct InputFieldLabel: View {
     public var text: String
     public var isRequired: Bool = false
     public var isDisabled: Bool = false
-    public var color: Color? = nil
+    public var color: Color?
 
     public init(text: String, isRequired: Bool = false, isDisabled: Bool = false, color: Color? = nil) {
         self.text = text
@@ -34,4 +34,3 @@ public struct InputFieldLabel: View {
         }
     }
 }
-

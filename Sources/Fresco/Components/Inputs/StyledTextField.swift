@@ -37,5 +37,3 @@ public struct StyledTextField: View {
             .opacity(isDisabled ? 0.6 : 1.0)
     }
 }
-
-

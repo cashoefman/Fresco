@@ -20,4 +20,3 @@ public struct LoadingIndicator: View {
             .frame(width: size, height: size)
     }
 }
-

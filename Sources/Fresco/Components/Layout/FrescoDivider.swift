@@ -23,4 +23,3 @@ public struct FrescoDivider: View {
             .edgesIgnoringSafeArea(.horizontal)
     }
 }
-

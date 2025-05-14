@@ -29,4 +29,3 @@ public struct ToastView: View {
             .shadow(radius: 4)
     }
 }
-

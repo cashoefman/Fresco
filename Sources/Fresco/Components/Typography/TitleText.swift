@@ -35,4 +35,3 @@ public struct TitleText: View {
     .padding()
     .background(AppColors.appBackground)
 }
-

@@ -11,8 +11,8 @@ public struct ChipView: View {
     public var label: String
     public var isSelected: Bool
     public var isDeletable: Bool
-    public var onTap: (() -> Void)? = nil
-    public var onDelete: (() -> Void)? = nil
+    public var onTap: (() -> Void)?
+    public var onDelete: (() -> Void)?
 
     public init(
         label: String,
@@ -37,16 +37,19 @@ public struct ChipView: View {
                 .padding(.horizontal, 10)
 
             if isDeletable {
-                Button(action: {
-                    onDelete?()
-                }) {
-                    Image(systemName: "xmark.circle.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 14, height: 14)
-                        .foregroundColor(isSelected ? .white : AppColors.grayDark)
-                        .padding(.trailing, 8)
-                }
+                Button(
+                    action: {
+                        onDelete?()
+                    },
+                    label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 14, height: 14)
+                            .foregroundColor(isSelected ? .white : AppColors.grayDark)
+                            .padding(.trailing, 8)
+                    }
+                )
                 .buttonStyle(.plain)
             }
         }
