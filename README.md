@@ -1,85 +1,92 @@
 # Fresco
 
-**Fresco** is a modular Swift Package that defines a reusable design system for SwiftUI applications. Inspired by the art of mural painting, it provides a clean, scalable foundation for typography, color, layout spacing, and UI components across projects.
+**Fresco** is a modular, scalable design system built in SwiftUI. It provides a consistent foundation of colors, typography, spacing, and reusable components for building beautiful and accessible iOS apps.
 
 ---
 
-## Features
+## What's Included
 
-* Unified color palette and typography
-* Spacing constants for consistent layout
-* Reusable SwiftUI components (`PrimaryButton`, `StyledTextField`, etc.)
-* Extendable for additional design tokens and elements
-* Built to work with MVVM or MVVM+C architecture
+- Design Tokens: Color, spacing, font, and layout constants
+- Typography: TitleText, SubtitleText, BodyText, and ErrorText
+- Inputs: CustomTextField, SecureEntryTextField, Chips, Toggles, Sliders
+- Buttons: Primary, Secondary, Icon, and Text buttons
+- Feedback: Toasts, Snackbars, Inline errors, Loading indicators
+- Media: AvatarImage, RoundedImage, AspectRatioImage
+- Layout Helpers: CardView, Stacks, Containers, Divider
+- Data Display: Empty state views, badges, list/grid items
 
----
-
-## Folder Structure
-
-```
-Fresco/
-├── Sources/
-│   └── Fresco/
-│       ├── Colors.swift                 # Central color definitions
-│       ├── Fonts.swift                  # App-wide font styles
-│       ├── Spacing.swift                # Layout and spacing constants
-│       ├── Components/
-│       │   ├── PrimaryButton.swift      # Styled SwiftUI Button
-│       │   └── StyledTextField.swift    # Consistent TextField component
-│       └── Helpers/
-│           └── ViewModifiers.swift      # Reusable view modifiers
-├── Resources/
-│   └── Assets.xcassets                  # Optional assets (e.g., icons, colors)
-└── Package.swift                        # Swift Package manifest
-```
+> Component previews are available in [FrescoDemoApp](https://github.com/cashoefman/FrescoDemoApp)
 
 ---
 
-## Getting Started
+## Installation
 
-### Add to Your App
+### Add via Swift Package Manager
 
-1. In Xcode, open your app project.
-2. Go to `File > Add Packages...`
-3. Select `Add Local...` and choose the `Fresco` package folder.
-4. Import the design system in your Swift files:
+In Xcode:
+
+1. Go to File > Add Packages…
+2. Enter the URL: `https://github.com/cashoefman/Fresco.git`
+3. Choose the latest version or main branch
+4. Add to your app target
+
+---
+
+## Usage
+
+Import Fresco in your SwiftUI views:
 
 ```swift
 import Fresco
-```
 
-### Example Usage
-
-```swift
-Text("Welcome to Muralists")
-    .font(AppFonts.subtitle)
-    .foregroundColor(AppColors.primary)
-    .padding(AppSpacing.large)
-
-PrimaryButton(title: "Get Started") {
-    // Action
+var body: some View {
+    VStack(spacing: AppSpacing.medium) {
+        TitleText("Welcome")
+        PrimaryButton(title: "Continue") { }
+    }
+    .padding()
+    .background(AppColors.appBackground)
 }
 ```
 
 ---
 
-## Customization
+## Requirements
 
-You can extend the system by:
+- iOS 18+
+- Swift 6.1+
+- Xcode 16.3+
 
-* Adding new components in `Sources/Fresco/Components`
-* Expanding the color or font sets
-* Creating view modifiers in the `Helpers` folder
+---
+
+## Roadmap
+
+### Foundation (Next Few Weeks)
+
+- [ ] Component Polish: Add missing states (e.g. loading, disabled, error)
+- [ ] Dark Mode Tuning: Ensure contrast and appearance fidelity
+- [ ] Accessibility Pass: VoiceOver, Dynamic Type, color contrast
+- [ ] Token Abstraction: Modularize AppColors, AppFonts, AppSpacing
+
+### Testing & Quality
+
+- [ ] Snapshot Testing (e.g. Point-Free's swift-snapshot-testing)
+- [ ] Visual State Demos: Showcase all states of a component in grid layout
+- [ ] UI Test Integration Points
+
+### Documentation & Developer Experience
+
+- [ ] DocC Documentation for public-facing components
+- [ ] Demo integration in Swift Playground or Xcode Preview Scenes
+- [ ] "Used In" Preview Scenarios for layout context
+
+### Theming (Stretch Goals)
+
+- [ ] Support for token overrides
+- [ ] Custom font system plug-in
 
 ---
 
 ## License
 
-This package is open for reuse and customization within your apps. Attribution is optional but appreciated.
-
----
-
-## About the Name
-
-“**Fresco**” refers to a traditional mural technique where pigments are applied to freshly laid plaster — a perfect metaphor for laying down the foundation of your app’s visual identity.
-
+MIT © [Cas Hoefman](https://github.com/cashoefman)
