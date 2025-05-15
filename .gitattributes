@@ -6,3 +6,6 @@
 
 # Exclude Xcode project user-specific files from diff
 *.xcuserstate -diff
+
+# .gitattributes
+*.svg binary

@@ -1,0 +1,40 @@
+:root {
+  --ifm-color-primary: #DF6508; /* Brand Primary */
+  --ifm-color-primary-dark: #c85a07;
+  --ifm-color-primary-darker: #b15106;
+  --ifm-color-primary-darkest: #9b4705;
+  --ifm-color-primary-light: #e97927;
+  --ifm-color-primary-lighter: #ef853e;
+  --ifm-color-primary-lightest: #f49755;
+
+  --brand-secondary: #0882DF; /* Secondary Color */
+
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #3A4244; /* Dark gray footer */
+  --ifm-footer-color: #C4CBCD; /* Light gray text */
+
+  /* Custom fonts or additional styling here */
+}
+
+/* Navbar customization (optional) */
+.navbar {
+  border-bottom: 1px solid var(--brand-secondary);
+}
+
+/* Footer customization */
+.footer {
+  background-color: var(--ifm-footer-background-color);
+  color: var(--ifm-footer-color);
+}
+
+/* Buttons (Optional) */
+.button.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
