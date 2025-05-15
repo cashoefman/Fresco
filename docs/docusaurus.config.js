@@ -16,6 +16,7 @@ const config = {
 
   url: 'https://fresco.disruptive.io', // your actual URL
   baseUrl: '/',
+  trailingSlash: true, // explicitly adds trailing slashes for URLs
 
   organizationName: 'disruptiveio', // your GitHub org/user name
   projectName: 'Fresco', // your GitHub repo name
