@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico', // replace with your actual favicon
 
   url: 'https://fresco.disruptive.io', // your actual URL
-  baseUrl: '/Fresco',
+  baseUrl: '/',
   trailingSlash: true, // explicitly adds trailing slashes for URLs
 
   organizationName: 'disruptiveio', // your GitHub org/user name
