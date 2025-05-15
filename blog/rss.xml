@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Fresco Design System Blog</title>
+        <link>https://fresco.disruptive.io/blog/</link>
+        <description>Fresco Design System Blog</description>
+        <lastBuildDate>Wed, 16 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Customizing Fresco Making It Your Own]]></title>
+            <link>https://fresco.disruptive.io/blog/customizing-fresco/</link>
+            <guid>https://fresco.disruptive.io/blog/customizing-fresco/</guid>
+            <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[One of Fresco’s core principles is flexibility. We understand every app has unique branding and styling requirements. Fresco makes customizing colors, fonts, and component styles straightforward and intuitive.]]></description>
+            <content:encoded><![CDATA[<p>One of Fresco’s core principles is flexibility. We understand every app has unique branding and styling requirements. Fresco makes customizing colors, fonts, and component styles straightforward and intuitive.</p>
+<p>Easily customize Fresco components by adjusting a few simple configuration files. Whether you’re aligning components to your existing brand guidelines or experimenting with fresh new styles, Fresco has you covered.</p>
+<p>Stay tuned as we’ll soon be sharing a detailed customization guide!</p>]]></content:encoded>
+            <category>Fresco</category>
+            <category>Customization</category>
+            <category>SwiftUI</category>
+        </item>
+        <item>
+            <title><![CDATA[Getting Started Quickly with Fresco]]></title>
+            <link>https://fresco.disruptive.io/blog/getting-started-with-fresco/</link>
+            <guid>https://fresco.disruptive.io/blog/getting-started-with-fresco/</guid>
+            <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[New to Fresco? Getting started is quick and easy! With just a few simple steps, you can integrate Fresco into your SwiftUI projects and start enjoying its benefits immediately.]]></description>
+            <content:encoded><![CDATA[<p>New to Fresco? Getting started is quick and easy! With just a few simple steps, you can integrate Fresco into your SwiftUI projects and start enjoying its benefits immediately.</p>
+<p>Here's how you can quickly get up and running:</p>
+<ol>
+<li>Add Fresco as a dependency using Swift Package Manager.</li>
+<li>Import Fresco components into your SwiftUI views.</li>
+<li>Enjoy building intuitive and visually appealing UIs rapidly.</li>
+</ol>
+<p>Check out our full <a href="https://fresco.disruptive.io/docs/intro/">Getting Started guide</a> for step-by-step instructions!</p>]]></content:encoded>
+            <category>Fresco</category>
+            <category>SwiftUI</category>
+            <category>getting-started</category>
+        </item>
+        <item>
+            <title><![CDATA[Fresco Design System Why We Built It]]></title>
+            <link>https://fresco.disruptive.io/blog/why-we-built-fresco/</link>
+            <guid>https://fresco.disruptive.io/blog/why-we-built-fresco/</guid>
+            <pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[When starting new SwiftUI projects, we noticed that many teams repeatedly encountered similar challenges—consistency, maintainability, and speed of development. We created the Fresco Design System to directly address these pain points.]]></description>
+            <content:encoded><![CDATA[<p>When starting new SwiftUI projects, we noticed that many teams repeatedly encountered similar challenges—consistency, maintainability, and speed of development. We created the Fresco Design System to directly address these pain points.</p>
+<p>Fresco provides:</p>
+<ul>
+<li><strong>Consistency:</strong> Unified and intuitive UI components.</li>
+<li><strong>Maintainability:</strong> Clearly defined guidelines and structured components.</li>
+<li><strong>Speed:</strong> Accelerate your app development without sacrificing quality.</li>
+</ul>
+<p>We’re excited to see how Fresco simplifies your development workflow.</p>]]></content:encoded>
+            <category>Fresco</category>
+            <category>Design System</category>
+        </item>
+        <item>
+            <title><![CDATA[Welcome to the Fresco Design System!]]></title>
+            <link>https://fresco.disruptive.io/blog/welcome-to-fresco/</link>
+            <guid>https://fresco.disruptive.io/blog/welcome-to-fresco/</guid>
+            <pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the official blog for the Fresco Design System—a comprehensive, flexible, and developer-friendly SwiftUI design framework crafted by Disruptive Tech.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the official blog for the Fresco Design System—a comprehensive, flexible, and developer-friendly SwiftUI design framework crafted by Disruptive Tech.</p>
+<p>We've built Fresco to simplify the creation of beautiful, consistent, and highly usable apps. With carefully designed components and guidelines, Fresco helps teams build quickly and confidently.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-to-expect-on-the-blog">What to Expect on the Blog<a href="https://fresco.disruptive.io/blog/welcome-to-fresco/#what-to-expect-on-the-blog" class="hash-link" aria-label="Direct link to What to Expect on the Blog" title="Direct link to What to Expect on the Blog">​</a></h2>
+<p>We'll regularly share updates, tips, best practices, and community highlights. Specifically, you can look forward to:</p>
+<ul>
+<li><strong>Component Highlights:</strong> Deep dives into Fresco's powerful components.</li>
+<li><strong>SwiftUI Tips &amp; Tricks:</strong> Practical guides to help you build better apps.</li>
+<li><strong>Community Stories:</strong> Showcasing how teams and individuals use Fresco in the real world.</li>
+<li><strong>Announcements:</strong> Updates and news on upcoming features and releases.</li>
+</ul>
+<p>We're excited to have you here—whether you're new to Fresco or already using it actively.</p>
+<p>Let's build better apps together!</p>]]></content:encoded>
+            <category>Fresco</category>
+            <category>SwiftUI</category>
+            <category>Announcement</category>
+        </item>
+    </channel>
+</rss>
