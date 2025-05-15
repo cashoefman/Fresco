@@ -1,7 +1,7 @@
 ---
 slug: getting-started-with-fresco
 title: Getting Started Quickly with Fresco
-authors: [cas-hoefman]
+authors: [cashoefman]
 tags: [fresco, swiftui, getting-started]
 ---
 
