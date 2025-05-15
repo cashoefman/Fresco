@@ -17,5 +17,3 @@ Fresco uses semantic versioning, clearly formatted as `MAJOR.MINOR.PATCH`:
 ### How to specify a version in your project:
 
 When adding Fresco via Swift Package Manager, you can specify the exact version, for example:
-
-
