@@ -65,6 +65,43 @@ var body: some View {
 
 ---
 
+## Folder Structure
+
+The Fresco Design System follows an explicit, category-based organization for components, ensuring consistency, scalability, and ease of navigation:
+
+Fresco/
+└── Sources/
+    └── Fresco/
+        └── Components/
+            ├── Buttons
+            ├── DataDisplay
+            ├── Feedback
+            ├── Inputs
+            ├── Interactive
+            ├── Layout
+            ├── Media
+            │   └── ProfileImage
+            │       └── ProfileImageView.swift
+            ├── Navigation
+            └── Typography
+
+---
+
+## Adding New Components
+
+When adding a new component:
+
+- Explicitly select the most suitable existing category.
+- Create a dedicated subfolder for the component within the chosen category.
+
+---
+
+## Theming
+
+Fresco supports dynamic theming with customizable color schemes, shapes, and typography, using JSON-based theme definitions. Themes are managed via an injectable ThemeManager following MVVM+C principles.
+
+---
+
 ## Roadmap
 
 ### Foundation (Next Few Weeks)

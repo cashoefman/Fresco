@@ -5,39 +5,51 @@
 //  Created by Cas Hoefman on 5/17/25.
 //
 
+import SwiftUI
 import Foundation
 
 @MainActor
-public class ThemeManager {
-    public static let shared = ThemeManager()
-
-    public private(set) var loadedThemes: [CustomThemeData] = []
-    private var themesByIdentifier: [String: CustomThemeData] = [:]
-
+public class ThemeManager: ObservableObject {
+    @Published public private(set) var currentTheme: CustomThemeData
+    public private(set) var loadedThemes: [CustomThemeData]
+    private var themesByIdentifier: [String: CustomThemeData]
     public let defaultThemeID = ThemeID(rawValue: "apptheme.m3.baseline")
 
-    private init() {
+    public init(themeID: ThemeID? = nil) {
+        // Explicitly initialize all properties first
+        self.loadedThemes = []
+        self.themesByIdentifier = [:]
+        self.currentTheme = CustomThemeData(
+            id: "temporary.placeholder",
+            displayName: "Temporary Placeholder",
+            lightColors: ColorHexes(primary: "", onPrimary: "", secondary: "", onSecondary: "", background: "", surfaceContainerLow: "", onSurface: "", inversePrimary: "", error: "", tertiary: "", secondaryContainer: "", outlineVariant: "", onSurfaceVariant: "", surfaceContainer: ""),
+            darkColors: ColorHexes(primary: "", onPrimary: "", secondary: "", onSecondary: "", background: "", surfaceContainerLow: "", onSurface: "", inversePrimary: "", error: "", tertiary: "", secondaryContainer: "", outlineVariant: "", onSurfaceVariant: "", surfaceContainer: "")
+        )
+
+        // Load actual themes after initialization
         do {
-            loadedThemes = try CustomThemeLoader.loadThemes(bundle: .module)
+            self.loadedThemes = try CustomThemeLoader.loadThemes(bundle: .module)
         } catch {
             print("❌ [ThemeManager] Error loading themes: \(error.localizedDescription)")
-            loadedThemes = [fallbackTheme()]
+            self.loadedThemes = [self.fallbackTheme()]
         }
 
-        loadedThemes.forEach { theme in
-            themesByIdentifier[theme.id] = theme
-        }
+        self.themesByIdentifier = Dictionary(uniqueKeysWithValues: loadedThemes.map { ($0.id, $0) })
 
-        if themesByIdentifier[defaultThemeID.rawValue] == nil {
-            print("⚠️ [ThemeManager] Default theme missing, explicitly loading fallback theme.")
-            let fallback = fallbackTheme()
-            themesByIdentifier[defaultThemeID.rawValue] = fallback
-            loadedThemes.append(fallback)
-        }
+        let selectedThemeID = themeID ?? defaultThemeID
+        self.currentTheme = themesByIdentifier[selectedThemeID.rawValue] ?? fallbackTheme()
     }
 
     public func getTheme(by id: String) -> CustomThemeData? {
         themesByIdentifier[id]
+    }
+
+    public func setTheme(by id: String) {
+        if let theme = themesByIdentifier[id] {
+            currentTheme = theme
+        } else {
+            print("⚠️ [ThemeManager] Attempted to set non-existent theme ID: \(id)")
+        }
     }
 
     private func fallbackTheme() -> CustomThemeData {

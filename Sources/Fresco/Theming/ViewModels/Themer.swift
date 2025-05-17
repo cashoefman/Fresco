@@ -6,24 +6,29 @@
 //
 
 import SwiftUI
+import Foundation
 
 @MainActor
 public class Themer: ObservableObject {
-    public static let shared = Themer()
-
     @Published public private(set) var theme: ThemeProtocol
     private var currentColorScheme: ColorScheme = .light
+    private let themeManager: ThemeManager
 
-    private init() {
-        let defaultThemeData = ThemeManager.shared.getTheme(by: ThemeManager.shared.defaultThemeID.rawValue)
-            ?? ThemeManager.shared.loadedThemes.first!
-        
+    public var availableThemes: [CustomThemeData] {
+        themeManager.loadedThemes
+    }
+
+    public init(themeManager: ThemeManager = ThemeManager()) {
+        self.themeManager = themeManager
+        let defaultThemeData = themeManager.getTheme(by: themeManager.defaultThemeID.rawValue)
+            ?? themeManager.loadedThemes.first!
+
         self.theme = CustomJSONTheme(data: defaultThemeData, colorScheme: currentColorScheme)
     }
 
     public func updateColorScheme(_ scheme: ColorScheme) {
         currentColorScheme = scheme
-        if let themeData = ThemeManager.shared.getTheme(by: ThemeManager.shared.defaultThemeID.rawValue) {
+        if let themeData = themeManager.getTheme(by: themeManager.defaultThemeID.rawValue) {
             theme = CustomJSONTheme(data: themeData, colorScheme: scheme)
         }
     }
@@ -32,4 +37,5 @@ public class Themer: ObservableObject {
         theme = CustomJSONTheme(data: themeData, colorScheme: currentColorScheme)
     }
 }
+
 
