@@ -1,0 +1,110 @@
+[
+  {
+    "id": "apptheme.m3.baseline",
+    "displayName": "Material 3 Baseline",
+    "lightColors": {
+      "primary": "#6750A4",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#625B71",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFFBFE",
+      "surfaceContainerLow": "#F7F2FA",
+      "onSurface": "#1C1B1F",
+      "inversePrimary": "#D0BCFF",
+      "error": "#B3261E",
+      "tertiary": "#7D5260",
+      "secondaryContainer": "#E8DEF8",
+      "outlineVariant": "#CAC4D0",
+      "onSurfaceVariant": "#49454F",
+      "surfaceContainer": "#F3EDF7"
+    },
+    "darkColors": {
+      "primary": "#D0BCFF",
+      "onPrimary": "#381E72",
+      "secondary": "#CCC2DC",
+      "onSecondary": "#332D41",
+      "background": "#1C1B1F",
+      "surfaceContainerLow": "#1D1B20",
+      "onSurface": "#E6E1E5",
+      "inversePrimary": "#6750A4",
+      "error": "#F2B8B5",
+      "tertiary": "#EFB8C8",
+      "secondaryContainer": "#4A4458",
+      "outlineVariant": "#49454F",
+      "onSurfaceVariant": "#CAC4D0",
+      "surfaceContainer": "#211F26"
+    }
+  },
+  {
+    "id": "apptheme.death_valley",
+    "displayName": "Death Valley",
+    "lightColors": {
+      "primary": "#F3B95F",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#AD6A44",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFF8F1",
+      "surfaceContainerLow": "#FFEEDD",
+      "onSurface": "#4A2E10",
+      "inversePrimary": "#A8702C",
+      "error": "#BA1A1A",
+      "tertiary": "#6C584C",
+      "secondaryContainer": "#FFD7B5",
+      "outlineVariant": "#D7C1B0",
+      "onSurfaceVariant": "#76563E",
+      "surfaceContainer": "#FFF2E4"
+    },
+    "darkColors": {
+      "primary": "#E8A349",
+      "onPrimary": "#4A2E10",
+      "secondary": "#92623A",
+      "onSecondary": "#FFFFFF",
+      "background": "#251E1A",
+      "surfaceContainerLow": "#362A21",
+      "onSurface": "#EDE0D4",
+      "inversePrimary": "#FFE0B2",
+      "error": "#FFB4A9",
+      "tertiary": "#D1B2A1",
+      "secondaryContainer": "#6A4C37",
+      "outlineVariant": "#A0897A",
+      "onSurfaceVariant": "#D7C1B0",
+      "surfaceContainer": "#2F251F"
+    }
+  },
+  {
+    "id": "apptheme.tin_mining",
+    "displayName": "Tin Mining",
+    "lightColors": {
+      "primary": "#8097A1",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#5B7B88",
+      "onSecondary": "#FFFFFF",
+      "background": "#F3F7F8",
+      "surfaceContainerLow": "#E2E9EB",
+      "onSurface": "#1A2326",
+      "inversePrimary": "#BBCED8",
+      "error": "#BA1A1A",
+      "tertiary": "#4E686F",
+      "secondaryContainer": "#D1DEE3",
+      "outlineVariant": "#B7C5CA",
+      "onSurfaceVariant": "#445A63",
+      "surfaceContainer": "#EEF3F5"
+    },
+    "darkColors": {
+      "primary": "#6B8B99",
+      "onPrimary": "#1A2326",
+      "secondary": "#456470",
+      "onSecondary": "#FFFFFF",
+      "background": "#1A2326",
+      "surfaceContainerLow": "#263136",
+      "onSurface": "#DEE9EC",
+      "inversePrimary": "#DDE8ED",
+      "error": "#FFB4A9",
+      "tertiary": "#A8BEC6",
+      "secondaryContainer": "#334851",
+      "outlineVariant": "#5C747D",
+      "onSurfaceVariant": "#B7C5CA",
+      "surfaceContainer": "#212C31"
+    }
+  }
+]

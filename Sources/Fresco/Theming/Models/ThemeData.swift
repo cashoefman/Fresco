@@ -1,39 +1,43 @@
 //
-//  Themer.swift
+//  ThemeData.swift
 //  Fresco
 //
 //  Created by Cas Hoefman on 5/17/25.
 //
 
-// Sources/Fresco/Theming/Themer.swift
 import SwiftUI
 
-@MainActor
-public class Themer: ObservableObject {
-    public static let shared = Themer()
-
-    @Published public private(set) var theme: ThemeProtocol
-    private var currentColorScheme: ColorScheme = .light
-
-    private init() {
-        let defaultThemeData = ThemeManager.shared.getTheme(by: ThemeManager.shared.defaultThemeID.rawValue)!
-        self.theme = CustomJSONTheme(data: defaultThemeData, colorScheme: currentColorScheme)
-    }
-
-    public func updateColorScheme(_ scheme: ColorScheme) {
-        currentColorScheme = scheme
-        if let themeData = ThemeManager.shared.getTheme(by: ThemeManager.shared.defaultThemeID.rawValue) {
-            theme = CustomJSONTheme(data: themeData, colorScheme: scheme)
-        }
-    }
+public struct ColorHexes: Codable {
+    public let primary: String
+    public let onPrimary: String
+    public let secondary: String
+    public let onSecondary: String
+    public let background: String
+    public let surfaceContainerLow: String
+    public let onSurface: String
+    public let inversePrimary: String
+    public let error: String
+    public let tertiary: String
+    public let secondaryContainer: String
+    public let outlineVariant: String
+    public let onSurfaceVariant: String
+    public let surfaceContainer: String
 }
 
-// CustomJSONTheme implementing ThemeProtocol
+public struct CustomThemeData: Codable, Identifiable {
+    public let id: String
+    public let displayName: String
+    public let lightColors: ColorHexes
+    public let darkColors: ColorHexes
+}
+
 public struct CustomJSONTheme: ThemeProtocol {
+    public let colorScheme: ColorScheme
     private let colors: ColorHexes
 
     public init(data: CustomThemeData, colorScheme: ColorScheme) {
-        self.colors = colorScheme == .dark ? data.darkColors : data.lightColors
+        self.colors = (colorScheme == .dark) ? data.darkColors : data.lightColors
+        self.colorScheme = colorScheme
     }
 
     public var primary: Color { Color(hex: colors.primary) }

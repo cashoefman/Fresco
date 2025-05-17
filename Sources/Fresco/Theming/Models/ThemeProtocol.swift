@@ -22,4 +22,5 @@ public protocol ThemeProtocol {
     var outlineVariant: Color { get }
     var onSurfaceVariant: Color { get }
     var surfaceContainer: Color { get }
+    var colorScheme: ColorScheme { get } 
 }

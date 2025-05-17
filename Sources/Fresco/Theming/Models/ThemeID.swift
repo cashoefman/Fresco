@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ThemeID: Hashable, Equatable, RawRepresentable, Sendable { // 👈 Add Sendable
+public struct ThemeID: Hashable, Equatable, RawRepresentable, Sendable {
     public var rawValue: String
 
     public init(rawValue: String) {
