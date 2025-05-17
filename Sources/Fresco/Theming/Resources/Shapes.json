@@ -1,0 +1,19 @@
+{
+  "baseline": {
+    "profileImage": {
+      "shape": "circle",
+      "borderWidth": 1.0,
+      "shadowRadius": 2.0,
+      "shadowOpacity": 0.2
+    },
+    "statusIndicator": {
+      "shape": "circle",
+      "size": 12.0
+    },
+    "profileImagePulse": {
+      "duration": 1.0,
+      "scale": 1.2,
+      "opacity": 0.5
+    }
+  }
+}

@@ -1,8 +1,8 @@
 //
 //  AppColors.swift
-//  Fresco Design System
+//  Fresco
 //
-//  Created by Cas Hoefman on 5/13/25.
+//  Created by Cas Hoefman on 5/17/25.
 //
 
 import SwiftUI

@@ -20,7 +20,8 @@ let package = Package(
             name: "Fresco",
             resources: [
                 .process("Resources/Assets.xcassets"),
-                .process("Theming/Resources/AppThemes.json")
+              //  .process("Theming/Resources/AppThemes.json")
+                .process("Theming/Resources")
             ]
         ),
         .testTarget(
