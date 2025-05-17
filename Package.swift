@@ -19,7 +19,8 @@ let package = Package(
         .target(
             name: "Fresco",
             resources: [
-                .process("Resources/Assets.xcassets")
+                .process("Resources/Assets.xcassets"),
+                .process("Resources/AppThemes.json") // 👈 Add this line clearly
             ]
         ),
         .testTarget(

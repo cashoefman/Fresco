@@ -1,0 +1,38 @@
+[
+  {
+    "id": "apptheme.m3.baseline",
+    "displayName": "Material 3",
+    "lightColors": {
+      "primary": "#6750A4",
+      "onPrimary": "#FFFFFF",
+      "secondary": "#625B71",
+      "onSecondary": "#FFFFFF",
+      "background": "#FFFBFE",
+      "surfaceContainerLow": "#F7F2FA",
+      "onSurface": "#1C1B1F",
+      "inversePrimary": "#D0BCFF",
+      "error": "#B3261E",
+      "tertiary": "#7D5260",
+      "secondaryContainer": "#E8DEF8",
+      "outlineVariant": "#CAC4D0",
+      "onSurfaceVariant": "#49454F",
+      "surfaceContainer": "#F3EDF7"
+    },
+    "darkColors": {
+      "primary": "#D0BCFF",
+      "onPrimary": "#381E72",
+      "secondary": "#CCC2DC",
+      "onSecondary": "#332D41",
+      "background": "#1C1B1F",
+      "surfaceContainerLow": "#1D1B20",
+      "onSurface": "#E6E1E5",
+      "inversePrimary": "#6750A4",
+      "error": "#F2B8B5",
+      "tertiary": "#EFB8C8",
+      "secondaryContainer": "#4A4458",
+      "outlineVariant": "#49454F",
+      "onSurfaceVariant": "#CAC4D0",
+      "surfaceContainer": "#211F26"
+    }
+  }
+]
