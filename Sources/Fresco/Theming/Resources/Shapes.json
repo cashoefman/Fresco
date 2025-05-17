@@ -14,6 +14,29 @@
       "duration": 1.0,
       "scale": 1.2,
       "opacity": 0.5
+    },
+    "cardShape": {
+      "cornerRadius": 12.0
+    },
+    "dialogShape": {
+      "corners": {
+        "topLeft": 20.0,
+        "topRight": 20.0,
+        "bottomLeft": 8.0,
+        "bottomRight": 8.0
+      }
+    },
+    "buttonShape": {
+      "cornerRadius": 8.0
+    },
+    "notificationBanner": {
+      "corners": {
+        "topLeft": 0.0,
+        "topRight": 0.0,
+        "bottomLeft": 12.0,
+        "bottomRight": 12.0
+      }
     }
   }
 }
+
